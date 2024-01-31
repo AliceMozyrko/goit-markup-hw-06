@@ -461,8 +461,6 @@ position: relative;
 
 .portfolio-img{
   margin: 0 auto;
-  width: 100%;
-  height: auto;
 }
 .card-text-cover{
   position: absolute;
@@ -563,7 +561,9 @@ color: var(--NAVY-BLUE, #2E2F42);
     max-width: 264px;
     margin-bottom: 72px;
 }
-
+.icon-text-footer{
+  width: 100%;
+}
 .social-footer {
     color: #FFFFFF;
     font-size: 16px;
@@ -577,6 +577,7 @@ color: var(--NAVY-BLUE, #2E2F42);
 .icon-list-footer{
   display: flex;
   gap: 16px;
+  justify-content: center;
   margin-bottom: 72px;
 }
 .icon-footer-list{
@@ -928,8 +929,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
         /* ------------PORTFOLIO------------ */
 
     .portfolio-list {
-      column-gap: 24px;
-      row-gap: 72px;
+      gap: 72px 24px;
     }
     
     .portfolio-item {
@@ -948,8 +948,12 @@ color: var(--LIGHT-SLATE, #8E8F99);
            }
    
         .icon-text-footer{
+          max-width: 405px;
           margin-left: 24px;
         }
+            .icon-list-footer {
+              justify-content: start;
+            }
         .social-footer{
          display: inline-block;
         }                
