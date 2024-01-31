@@ -74,7 +74,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   display: flex;
   align-items: center;
 }
-
+.menu-icon{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 .header-logo-grey{
   color: #2e2f42;
   font-family: Raleway, sans-serif;
@@ -475,11 +478,12 @@ position: relative;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
-}
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+gap: 48px 0px;
+    }
+    
 .portfolio-item{
   position: relative;
     background: var(--WHITE, #FFF);
@@ -528,17 +532,16 @@ color: var(--NAVY-BLUE, #2E2F42);
 }
 
 .footer-logo{
-color: var(--IRIS, #4D5AE5);
+  justify-content: center;
+  color: var(--IRIS, #4D5AE5);
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
     margin-bottom: 18px;
-    align-items: center;
-    justify-content: center;
   }
 
 .footer-logo-white {
@@ -549,8 +552,6 @@ color: var(--IRIS, #4D5AE5);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    align-items: center;
-      justify-content: center;
   }
 
 .footer-text {
@@ -569,10 +570,9 @@ color: var(--IRIS, #4D5AE5);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
     justify-content: center;
-    align-items: center;
 }
 .icon-list-footer{
   display: flex;
@@ -590,7 +590,7 @@ color: var(--IRIS, #4D5AE5);
   background-color: #4d5ae5;
   border-radius: 50%;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link-footer:hover {
@@ -606,9 +606,9 @@ color: var(--WHITE, #FFF);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-    margin-bottom: 16px; 
-    justify-content: center;
-      align-items: center;
+   margin-bottom: 16px; 
+   display: flex;
+  justify-content: center;
 }
 
 .input-email{
@@ -624,7 +624,6 @@ color: var(--WHITE, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-left: 16px;
-  /* margin-left: 80px; */
     outline: transparent;
     margin-bottom: 16px;
 }
@@ -844,7 +843,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
       }
@@ -871,7 +870,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
           padding: 112px 0;
         }
 
-        @media screen and (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx) {
           .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -929,8 +928,7 @@ color: var(--LIGHT-SLATE, #8E8F99);
         /* ------------PORTFOLIO------------ */
 
     .portfolio-list {
-      column-gap: 24px;
-      row-gap:72px;
+      gap: 72px 24px;
     }
     
     .portfolio-item {
@@ -940,22 +938,27 @@ color: var(--LIGHT-SLATE, #8E8F99);
 
     /* --------------FOOTER------------- */
         .container-footer {
-            flex-direction: row;
+          flex-direction: row;
           flex-wrap: wrap;
         }
-
          .footer-logo {
+          display: inline-block;
           margin-bottom: 16px;
            }
+   
         .icon-text-footer{
           margin-left: 24px;
         }
+        .social-footer{
+         display: inline-block;
+        }                
        .footer-form{
         display: flex;
         flex-wrap: wrap;
-      }
-       .footer-form{
         gap: 24px;
+      }
+      .contacts-footer{
+        justify-content: start;
       }
       .input-email{
         width: 264px;
@@ -1061,23 +1064,16 @@ color: var(--LIGHT-SLATE, #8E8F99);
 
       /* ---------FOOTER------------ */
         .container-footer {
-          flex-direction: row;
           flex-wrap: nowrap;
         }
-      .footer-logo-p{
-        margin-right: 120px;
-      }
-
-    .footer-logo {
-      margin-bottom: 16px;
+    .icon-text-footer {
+      margin-left: 120px;
     }
-
     .contacts-footer {
       margin-left: 80px;
     }
-  }
-
     .input-email {
       margin-left: 80px;
     }
+  }
   
