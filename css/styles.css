@@ -481,7 +481,7 @@ position: relative;
 .portfolio-list {
 display: flex;
 flex-wrap: wrap;
-gap: 48px 0px;
+gap: 48px;
     }
     
 .portfolio-item{
@@ -928,7 +928,8 @@ color: var(--LIGHT-SLATE, #8E8F99);
         /* ------------PORTFOLIO------------ */
 
     .portfolio-list {
-      gap: 72px 24px;
+      column-gap: 24px;
+      row-gap: 72px;
     }
     
     .portfolio-item {
