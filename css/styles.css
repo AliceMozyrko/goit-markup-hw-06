@@ -461,6 +461,7 @@ position: relative;
 
 .portfolio-img{
   margin: 0 auto;
+width: 100%;
 }
 .card-text-cover{
   position: absolute;
@@ -523,6 +524,7 @@ color: var(--NAVY-BLUE, #2E2F42);
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  align-items: center;
 }
 .footer{
   background: var(--NAVY-BLUE, #2E2F42);
@@ -561,9 +563,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     max-width: 264px;
     margin-bottom: 72px;
 }
-.icon-text-footer{
-  width: 100%;
-}
+
 .social-footer {
     color: #FFFFFF;
     font-size: 16px;
@@ -928,13 +928,14 @@ color: var(--LIGHT-SLATE, #8E8F99);
     
         /* ------------PORTFOLIO------------ */
 
-    .portfolio-list {
-      gap: 72px 24px;
-    }
+         .portfolio-list {
+           gap: 72px 24px;
+         }
     
     .portfolio-item {
       width: calc((100% - 24px) / 2);
     }
+   
     /* ------------------------------------ */
 
     /* --------------FOOTER------------- */
@@ -1069,10 +1070,16 @@ color: var(--LIGHT-SLATE, #8E8F99);
 
       /* ---------FOOTER------------ */
         .container-footer {
+          align-items: start;
           flex-wrap: nowrap;
           gap: 0;
         }
-    
+    .icon-text-footer{
+      margin-left: 120px;
+    }
+    .subscribe{
+      margin-left: 80px;
+    }
     .footer-form{
       flex-wrap: nowrap;
     }
